@@ -88,8 +88,8 @@ A location-based services (LBS) Progressive Web Application (PWA) for discoverin
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Bolu-Adeniranye/foodspot
-cd foodspot
+git clone https://github.com/Bolu-Adeniranye/local-food-spots-finder
+cd food-spots-finder
 ```
 
 ### 2. Navigate to Docker Directory
