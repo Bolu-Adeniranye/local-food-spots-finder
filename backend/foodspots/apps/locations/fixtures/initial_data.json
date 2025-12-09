@@ -1,0 +1,257 @@
+[
+  {
+    "model": "locations.foodspot",
+    "pk": 1,
+    "fields": {
+      "name": "Mario's Italian Kitchen",
+      "cuisine_type": "italian",
+      "description": "Authentic Italian cuisine with fresh homemade pasta and wood-fired pizza",
+      "address": "123 Grafton Street, Dublin 2",
+      "phone": "+353 1 234 5678",
+      "website": "https://marios-italian.example.com",
+      "rating": "4.5",
+      "price_range": "$$",
+      "opening_hours": "11:00 AM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.260310 53.349805)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 2,
+    "fields": {
+      "name": "Dragon Palace",
+      "cuisine_type": "chinese",
+      "description": "Traditional Chinese dishes, authentic dim sum, and Szechuan specialties",
+      "address": "45 O'Connell Street, Dublin 1",
+      "phone": "+353 1 234 5679",
+      "website": "https://dragonpalace.example.com",
+      "rating": "4.2",
+      "price_range": "$$",
+      "opening_hours": "12:00 PM - 10:30 PM",
+      "location": "SRID=4326;POINT (-6.258845 53.349562)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 3,
+    "fields": {
+      "name": "Taco Fiesta",
+      "cuisine_type": "mexican",
+      "description": "Vibrant Mexican street food, tacos, burritos, and margaritas",
+      "address": "78 Temple Bar, Dublin 2",
+      "phone": "+353 1 234 5680",
+      "website": "https://tacofiesta.example.com",
+      "rating": "4.7",
+      "price_range": "$",
+      "opening_hours": "10:00 AM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.266155 53.345418)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 4,
+    "fields": {
+      "name": "Sakura Sushi",
+      "cuisine_type": "japanese",
+      "description": "Fresh sushi, sashimi, and traditional Japanese cuisine",
+      "address": "12 Dame Street, Dublin 2",
+      "phone": "+353 1 234 5681",
+      "website": "https://sakurasushi.example.com",
+      "rating": "4.8",
+      "price_range": "$$$",
+      "opening_hours": "12:00 PM - 10:30 PM",
+      "location": "SRID=4326;POINT (-6.264455 53.344214)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 5,
+    "fields": {
+      "name": "Spice of India",
+      "cuisine_type": "indian",
+      "description": "Aromatic Indian curries, tandoori specialties, and naan bread",
+      "address": "34 South William Street, Dublin 2",
+      "phone": "+353 1 234 5682",
+      "website": "https://spiceofindia.example.com",
+      "rating": "4.4",
+      "price_range": "$$",
+      "opening_hours": "11:30 AM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.263210 53.342805)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 6,
+    "fields": {
+      "name": "The Burger Joint",
+      "cuisine_type": "burger",
+      "description": "Gourmet burgers with premium beef and craft beers on tap",
+      "address": "56 Camden Street, Dublin 2",
+      "phone": "+353 1 234 5683",
+      "website": "https://burgerjoint.example.com",
+      "rating": "4.6",
+      "price_range": "$$",
+      "opening_hours": "12:00 PM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.264892 53.333919)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 7,
+    "fields": {
+      "name": "Quick Bites Fast Food",
+      "cuisine_type": "fast_food",
+      "description": "Fast food favorites, burgers, chicken, and fries",
+      "address": "90 Henry Street, Dublin 1",
+      "phone": "+353 1 234 5684",
+      "website": "",
+      "rating": "3.8",
+      "price_range": "$",
+      "opening_hours": "8:00 AM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.260745 53.348917)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 8,
+    "fields": {
+      "name": "Café Mocha",
+      "cuisine_type": "cafe",
+      "description": "Artisan coffee, fresh pastries, and light lunch options",
+      "address": "23 Dawson Street, Dublin 2",
+      "phone": "+353 1 234 5685",
+      "website": "https://cafemocha.example.com",
+      "rating": "4.5",
+      "price_range": "$",
+      "opening_hours": "7:00 AM - 7:00 PM",
+      "location": "SRID=4326;POINT (-6.254892 53.340919)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 9,
+    "fields": {
+      "name": "Pizza Paradise",
+      "cuisine_type": "pizza",
+      "description": "Wood-fired authentic Neapolitan pizzas with imported ingredients",
+      "address": "15 Exchequer Street, Dublin 2",
+      "phone": "+353 1 234 5686",
+      "website": "https://pizzaparadise.example.com",
+      "rating": "4.3",
+      "price_range": "$$",
+      "opening_hours": "11:00 AM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.262310 53.342005)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 10,
+    "fields": {
+      "name": "Ocean Delights Seafood",
+      "cuisine_type": "seafood",
+      "description": "Fresh seafood daily, lobster, oysters, and fish & chips",
+      "address": "8 Howth Harbor, Dublin",
+      "phone": "+353 1 234 5687",
+      "website": "https://oceandelights.example.com",
+      "rating": "4.9",
+      "price_range": "$$$",
+      "opening_hours": "12:00 PM - 10:00 PM",
+      "location": "SRID=4326;POINT (-6.068389 53.388611)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 11,
+    "fields": {
+      "name": "Green Garden Vegetarian",
+      "cuisine_type": "vegetarian",
+      "description": "Plant-based cuisine, vegan options, and organic ingredients",
+      "address": "67 George's Street, Dublin 2",
+      "phone": "+353 1 234 5688",
+      "website": "https://greengarden.example.com",
+      "rating": "4.6",
+      "price_range": "$$",
+      "opening_hours": "10:00 AM - 9:00 PM",
+      "location": "SRID=4326;POINT (-6.263892 53.341919)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 12,
+    "fields": {
+      "name": "Thai Orchid Restaurant",
+      "cuisine_type": "thai",
+      "description": "Authentic Thai cuisine, pad thai, green curry, and tom yum soup",
+      "address": "89 Parnell Street, Dublin 1",
+      "phone": "+353 1 234 5689",
+      "website": "https://thaiorchid.example.com",
+      "rating": "4.4",
+      "price_range": "$$",
+      "opening_hours": "11:30 AM - 10:30 PM",
+      "location": "SRID=4326;POINT (-6.261445 53.351214)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 13,
+    "fields": {
+      "name": "Mediterranean Breeze",
+      "cuisine_type": "mediterranean",
+      "description": "Mediterranean flavors, Greek and Turkish specialties, mezze platters",
+      "address": "45 Capel Street, Dublin 1",
+      "phone": "+353 1 234 5690",
+      "website": "https://medbreeze.example.com",
+      "rating": "4.5",
+      "price_range": "$$",
+      "opening_hours": "12:00 PM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.267055 53.347418)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 14,
+    "fields": {
+      "name": "American Diner Classic",
+      "cuisine_type": "american",
+      "description": "Classic American comfort food, steaks, ribs, and milkshakes",
+      "address": "23 Aungier Street, Dublin 2",
+      "phone": "+353 1 234 5691",
+      "website": "https://americandiner.example.com",
+      "rating": "4.1",
+      "price_range": "$$",
+      "opening_hours": "10:00 AM - 11:00 PM",
+      "location": "SRID=4326;POINT (-6.265310 53.338805)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "locations.foodspot",
+    "pk": 15,
+    "fields": {
+      "name": "Bella Napoli Pizza",
+      "cuisine_type": "pizza",
+      "description": "Traditional Neapolitan pizza made by Italian chefs",
+      "address": "12 Wicklow Street, Dublin 2",
+      "phone": "+353 1 234 5692",
+      "website": "https://bellanapoli.example.com",
+      "rating": "4.7",
+      "price_range": "$$",
+      "opening_hours": "11:00 AM - 11:30 PM",
+      "location": "SRID=4326;POINT (-6.259310 53.343805)",
+      "is_active": true
+    }
+  }
+]

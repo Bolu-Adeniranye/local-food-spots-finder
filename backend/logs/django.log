@@ -1,0 +1,232 @@
+[INFO] 2025-11-07 01:03:27,836 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:30:13,538 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:30:56,753 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:30:58,691 views Returning 15 food spots
+[INFO] 2025-11-07 01:30:58,692 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:31:01,914 views Returning 15 food spots
+[INFO] 2025-11-07 01:31:01,915 basehttp "GET /api/foodspots/ HTTP/1.0" 200 3112
+[INFO] 2025-11-07 01:31:57,540 autoreload /app/foodspots/urls.py changed, reloading.
+[INFO] 2025-11-07 01:33:38,128 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:32:07,623 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:32:14,675 basehttp "GET / HTTP/1.1" 200 7924
+[INFO] 2025-11-07 01:32:14,899 basehttp "GET /static/css/style.css HTTP/1.1" 200 8714
+[INFO] 2025-11-07 01:32:14,904 basehttp "GET /static/js/app.js HTTP/1.1" 200 18683
+[INFO] 2025-11-07 01:32:14,961 basehttp "GET /api/foodspots/categories/ HTTP/1.1" 200 592
+[INFO] 2025-11-07 01:32:14,980 views Returning 15 food spots
+[INFO] 2025-11-07 01:32:14,981 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[WARNING] 2025-11-07 01:32:15,131 log Not Found: /favicon.ico
+[WARNING] 2025-11-07 01:32:15,131 basehttp "GET /favicon.ico HTTP/1.1" 404 2583
+[INFO] 2025-11-07 01:32:24,651 views Finding nearest spots to (53.34099261754471, -6.277080586951548), limit=10
+[INFO] 2025-11-07 01:32:24,740 views Found 10 nearest spots
+[INFO] 2025-11-07 01:32:24,742 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 3902
+[INFO] 2025-11-07 01:32:30,269 views Searching within 1000.0m of (53.34099261754471, -6.277080586951548), cuisine=None
+[ERROR] 2025-11-07 01:32:30,271 views Invalid parameters: Only numeric values of degree units are allowed on geographic DWithin queries.
+[WARNING] 2025-11-07 01:32:30,272 log Bad Request: /api/foodspots/within_radius/
+[WARNING] 2025-11-07 01:32:30,272 basehttp "POST /api/foodspots/within_radius/ HTTP/1.1" 400 30
+[INFO] 2025-11-07 01:32:35,307 views Searching within 1500.0m of (53.34213390192068, -6.27213268280029), cuisine=None
+[ERROR] 2025-11-07 01:32:35,309 views Invalid parameters: Only numeric values of degree units are allowed on geographic DWithin queries.
+[WARNING] 2025-11-07 01:32:35,309 log Bad Request: /api/foodspots/within_radius/
+[WARNING] 2025-11-07 01:32:35,310 basehttp "POST /api/foodspots/within_radius/ HTTP/1.1" 400 30
+[INFO] 2025-11-07 01:32:41,026 views Searching within polygon with 5 points
+[INFO] 2025-11-07 01:32:41,032 views Found 3 spots within bounds
+[INFO] 2025-11-07 01:32:41,033 basehttp "POST /api/foodspots/within_bounds/ HTTP/1.1" 200 1058
+[INFO] 2025-11-07 01:32:44,699 views Returning 15 food spots
+[INFO] 2025-11-07 01:32:44,701 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:32:48,447 views Finding nearest spots to (53.34349858211049, -6.261832639739268), limit=10
+[INFO] 2025-11-07 01:32:48,450 views Found 10 nearest spots
+[INFO] 2025-11-07 01:32:48,452 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 3897
+[INFO] 2025-11-07 01:32:53,997 views Returning 15 food spots
+[INFO] 2025-11-07 01:32:53,998 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:34:44,290 views Returning 1 food spots
+[INFO] 2025-11-07 01:34:44,291 basehttp "GET /api/foodspots/?cuisine_type=italian HTTP/1.1" 200 213
+[INFO] 2025-11-07 01:33:07,057 views Returning 15 food spots
+[INFO] 2025-11-07 01:33:07,058 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:33:13,209 views Finding nearest spots to (53.34293549009332, -6.273070958655661), limit=10
+[INFO] 2025-11-07 01:33:13,212 views Found 10 nearest spots
+[INFO] 2025-11-07 01:33:13,213 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 3902
+[INFO] 2025-11-07 01:33:18,879 views Returning 15 food spots
+[INFO] 2025-11-07 01:33:18,879 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:33:30,317 views Searching within polygon with 4 points
+[INFO] 2025-11-07 01:33:30,319 views Found 1 spots within bounds
+[INFO] 2025-11-07 01:33:30,320 basehttp "POST /api/foodspots/within_bounds/ HTTP/1.1" 200 352
+[INFO] 2025-11-07 01:33:35,155 views Returning 15 food spots
+[INFO] 2025-11-07 01:33:35,156 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:34:03,656 views Searching within 2000.0m of (53.33954376113069, -6.265882212721452), cuisine=None
+[ERROR] 2025-11-07 01:34:03,657 views Invalid parameters: Only numeric values of degree units are allowed on geographic DWithin queries.
+[WARNING] 2025-11-07 01:34:03,658 log Bad Request: /api/foodspots/within_radius/
+[WARNING] 2025-11-07 01:34:03,658 basehttp "POST /api/foodspots/within_radius/ HTTP/1.1" 400 30
+[INFO] 2025-11-07 01:34:14,816 views Returning 15 food spots
+[INFO] 2025-11-07 01:34:14,817 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:36:42,098 autoreload /app/foodspots/apps/locations/views.py changed, reloading.
+[INFO] 2025-11-07 01:36:43,182 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:38:28,350 autoreload /app/foodspots/apps/locations/models.py changed, reloading.
+[INFO] 2025-11-07 01:38:29,392 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:38:50,643 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:39:29,037 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 01:39:54,233 basehttp "GET / HTTP/1.1" 200 9055
+[INFO] 2025-11-07 01:39:54,488 basehttp "GET /static/css/style.css HTTP/1.1" 200 9723
+[INFO] 2025-11-07 01:39:54,495 basehttp "GET /static/js/app.js HTTP/1.1" 200 21107
+[INFO] 2025-11-07 01:39:54,557 basehttp "GET /api/foodspots/categories/ HTTP/1.1" 200 592
+[INFO] 2025-11-07 01:39:54,581 views Returning 15 food spots
+[INFO] 2025-11-07 01:39:54,582 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[WARNING] 2025-11-07 01:39:54,757 log Not Found: /favicon.ico
+[WARNING] 2025-11-07 01:39:54,758 basehttp "GET /favicon.ico HTTP/1.1" 404 2583
+[INFO] 2025-11-07 01:40:03,113 views Finding nearest 10 spots to (53.34134948974019, -6.281972275381007)
+[INFO] 2025-11-07 01:40:03,138 views Found 10 nearest spots
+[INFO] 2025-11-07 01:40:03,139 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 3907
+[INFO] 2025-11-07 01:41:51,060 views Returning 15 food spots
+[INFO] 2025-11-07 01:41:51,061 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:41:58,263 views Finding nearest 3 spots to (53.34075550822434, -6.2766765324149585)
+[INFO] 2025-11-07 01:41:58,265 views Found 3 nearest spots
+[INFO] 2025-11-07 01:41:58,266 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 1190
+[INFO] 2025-11-07 01:42:00,735 views Returning 15 food spots
+[INFO] 2025-11-07 01:42:00,737 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:42:01,850 views Returning 1 food spots
+[INFO] 2025-11-07 01:42:01,851 basehttp "GET /api/foodspots/?cuisine_type=japanese HTTP/1.1" 200 202
+[INFO] 2025-11-07 01:42:04,890 views Finding nearest 10 spots to (53.34063181841831, -6.278454022144702)
+[INFO] 2025-11-07 01:42:04,894 views Found 10 nearest spots
+[INFO] 2025-11-07 01:42:04,895 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 3905
+[INFO] 2025-11-07 01:42:06,642 views Returning 15 food spots
+[INFO] 2025-11-07 01:42:06,643 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:42:11,040 views Searching within polygon with 5 points
+[INFO] 2025-11-07 01:42:11,044 views Found 1 spots within bounds
+[INFO] 2025-11-07 01:42:11,045 basehttp "POST /api/foodspots/within_bounds/ HTTP/1.1" 200 335
+[INFO] 2025-11-07 01:42:12,193 views Returning 15 food spots
+[INFO] 2025-11-07 01:42:12,194 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:40:34,475 views Returning 1 food spots
+[INFO] 2025-11-07 01:40:34,476 basehttp "GET /api/foodspots/?cuisine_type=cafe HTTP/1.1" 200 205
+[INFO] 2025-11-07 01:40:36,949 views Returning 15 food spots
+[INFO] 2025-11-07 01:40:36,950 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:40:53,640 views Finding nearest 10 spots to (53.342119638644284, -6.273132588544233)
+[INFO] 2025-11-07 01:40:53,643 views Found 10 nearest spots
+[INFO] 2025-11-07 01:40:53,644 basehttp "POST /api/foodspots/nearest/ HTTP/1.1" 200 3902
+[INFO] 2025-11-07 01:40:59,077 views Returning 15 food spots
+[INFO] 2025-11-07 01:40:59,078 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 01:41:02,199 views Searching within 1000.0m of (53.34277442166765, -6.267583572207467), cuisine=None
+[INFO] 2025-11-07 01:41:02,203 views Found 12 spots within radius
+[INFO] 2025-11-07 01:41:02,205 basehttp "POST /api/foodspots/within_radius/ HTTP/1.1" 200 4703
+[INFO] 2025-11-07 01:41:06,568 views Searching within 500.0m of (53.34277442166765, -6.267583572207467), cuisine=None
+[INFO] 2025-11-07 01:41:06,572 views Found 6 spots within radius
+[INFO] 2025-11-07 01:41:06,573 basehttp "POST /api/foodspots/within_radius/ HTTP/1.1" 200 2350
+[INFO] 2025-11-07 01:41:59,934 views Returning 15 food spots
+[INFO] 2025-11-07 01:41:59,936 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3112
+[INFO] 2025-11-07 18:27:14,260 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 18:28:02,906 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 18:28:33,278 autoreload Watching for file changes with StatReloader
+[INFO] 2025-11-07 18:29:04,306 basehttp "GET / HTTP/1.1" 200 9055
+[INFO] 2025-11-07 18:29:04,335 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-11-07 18:29:04,336 basehttp "GET /static/js/app.js HTTP/1.1" 304 0
+[INFO] 2025-11-07 18:29:04,596 basehttp "GET /api/foodspots/categories/ HTTP/1.1" 200 592
+[INFO] 2025-11-07 18:29:04,615 views Returning 15 food spots
+[INFO] 2025-11-07 18:29:04,616 basehttp "GET /api/foodspots/ HTTP/1.1" 200 3179
+[WARNING] 2025-11-07 18:29:04,829 log Not Found: /favicon.ico
+[WARNING] 2025-11-07 18:29:04,829 basehttp "GET /favicon.ico HTTP/1.1" 404 2583
+[INFO] 2025-11-07 18:29:11,917 basehttp "GET /admin HTTP/1.1" 301 0
+[INFO] 2025-11-07 18:29:11,927 basehttp "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-11-07 18:29:11,962 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+[INFO] 2025-11-07 18:29:11,989 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+[INFO] 2025-11-07 18:29:11,994 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+[INFO] 2025-11-07 18:29:11,995 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+[INFO] 2025-11-07 18:29:11,995 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[INFO] 2025-11-07 18:29:11,996 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+[INFO] 2025-11-07 18:29:12,152 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-11-07 18:29:12,152 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+[INFO] 2025-12-07 09:00:51,323 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:07:34,955 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:08:23,020 basehttp "GET /admin/ HTTP/1.0" 302 0
+[INFO] 2025-12-08 20:08:31,603 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:08:31,888 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[ERROR] 2025-12-08 20:08:31,895 views Error in list: relation "locations_review" does not exist
+LINE 1: ...rating" FROM "locations_foodspot" LEFT OUTER JOIN "locations...
+                                                             ^
+
+[ERROR] 2025-12-08 20:08:31,896 log Internal Server Error: /api/foodspots/
+[ERROR] 2025-12-08 20:08:31,897 basehttp "GET /api/foodspots/ HTTP/1.0" 500 202
+[INFO] 2025-12-08 20:11:43,771 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:13:13,616 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:13:13,795 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[ERROR] 2025-12-08 20:13:13,845 views Error in list: property 'review_count' of 'FoodSpot' object has no setter
+[ERROR] 2025-12-08 20:13:13,846 log Internal Server Error: /api/foodspots/
+[ERROR] 2025-12-08 20:13:13,848 basehttp "GET /api/foodspots/ HTTP/1.0" 500 70
+[ERROR] 2025-12-08 20:13:25,944 views Error in list: property 'review_count' of 'FoodSpot' object has no setter
+[ERROR] 2025-12-08 20:13:25,972 log Internal Server Error: /api/foodspots/
+[ERROR] 2025-12-08 20:13:25,972 basehttp "GET /api/foodspots/ HTTP/1.0" 500 13890
+[WARNING] 2025-12-08 20:13:26,036 log Not Found: /favicon.ico
+[WARNING] 2025-12-08 20:13:26,037 basehttp "GET /favicon.ico HTTP/1.0" 404 2578
+[INFO] 2025-12-08 20:14:20,036 autoreload /app/foodspots/apps/locations/serializers.py changed, reloading.
+[INFO] 2025-12-08 20:14:21,058 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:14:34,949 autoreload Watching for file changes with StatReloader
+[ERROR] 2025-12-08 20:14:43,260 views Error in list: property 'review_count' of 'FoodSpot' object has no setter
+[ERROR] 2025-12-08 20:14:43,261 log Internal Server Error: /api/foodspots/
+[ERROR] 2025-12-08 20:14:43,262 basehttp "GET /api/foodspots/ HTTP/1.0" 500 70
+[INFO] 2025-12-08 20:15:01,417 autoreload /app/foodspots/apps/locations/serializers.py changed, reloading.
+[INFO] 2025-12-08 20:15:02,213 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:15:38,045 autoreload /app/foodspots/apps/locations/models.py changed, reloading.
+[INFO] 2025-12-08 20:15:38,977 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:15:41,098 views Returning 15 food spots
+[INFO] 2025-12-08 20:15:41,099 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:15:33,085 autoreload /app/foodspots/apps/locations/models.py changed, reloading.
+[INFO] 2025-12-08 20:15:33,881 autoreload Watching for file changes with StatReloader
+[INFO] 2025-12-08 20:15:52,415 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:15:52,596 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[INFO] 2025-12-08 20:15:52,613 views Returning 15 food spots
+[INFO] 2025-12-08 20:15:52,615 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:21:00,433 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:21:00,556 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[INFO] 2025-12-08 20:21:00,595 views Returning 15 food spots
+[INFO] 2025-12-08 20:21:00,596 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:21:48,128 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:21:48,175 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[INFO] 2025-12-08 20:21:28,324 views Returning 15 food spots
+[INFO] 2025-12-08 20:21:28,325 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:21:29,183 basehttp "GET /api/foodspots/statistics/ HTTP/1.0" 200 338
+[INFO] 2025-12-08 20:21:35,214 basehttp "GET /admin HTTP/1.0" 301 0
+[INFO] 2025-12-08 20:21:35,230 basehttp "GET /admin/ HTTP/1.0" 302 0
+[INFO] 2025-12-08 20:21:35,265 basehttp "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4181
+[WARNING] 2025-12-08 20:21:35,300 log Not Found: /favicon.ico
+[WARNING] 2025-12-08 20:21:35,301 basehttp "GET /favicon.ico HTTP/1.0" 404 2578
+[INFO] 2025-12-08 20:21:41,956 basehttp "GET /api/foodspots/29/reviews/ HTTP/1.0" 200 2
+[INFO] 2025-12-08 20:23:04,331 views Returning 1 food spots
+[INFO] 2025-12-08 20:23:04,333 basehttp "GET /api/foodspots/?cuisine_type=indian HTTP/1.0" 200 379
+[INFO] 2025-12-08 20:23:05,278 views Returning 15 food spots
+[INFO] 2025-12-08 20:23:05,279 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:23:20,047 views Searching within polygon with 5 points
+[INFO] 2025-12-08 20:23:20,076 views Found 6 spots within bounds
+[INFO] 2025-12-08 20:23:20,077 basehttp "POST /api/foodspots/within_bounds/ HTTP/1.0" 200 2213
+[INFO] 2025-12-08 20:23:21,641 views Returning 15 food spots
+[INFO] 2025-12-08 20:23:21,642 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:24:33,406 views Returning 15 food spots
+[INFO] 2025-12-08 20:24:33,407 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:34:17,238 views Finding nearest 10 spots to (53.3439723858526, -6.273279190063477)
+[INFO] 2025-12-08 20:34:17,336 views Found 10 nearest spots
+[INFO] 2025-12-08 20:34:17,338 basehttp "POST /api/foodspots/nearest/ HTTP/1.0" 200 4117
+[INFO] 2025-12-08 20:34:27,785 views Returning 15 food spots
+[INFO] 2025-12-08 20:34:27,786 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:34:30,278 views Searching within 1000.0m of (53.343180693257764, -6.271691322326661), cuisine=None
+[INFO] 2025-12-08 20:34:30,309 views Found 9 spots within radius
+[INFO] 2025-12-08 20:34:30,311 basehttp "POST /api/foodspots/within_radius/ HTTP/1.0" 200 3691
+[INFO] 2025-12-08 20:34:45,805 views Searching within 500.0m of (53.343180693257764, -6.271691322326661), cuisine=None
+[INFO] 2025-12-08 20:34:45,838 views Found 2 spots within radius
+[INFO] 2025-12-08 20:34:45,839 basehttp "POST /api/foodspots/within_radius/ HTTP/1.0" 200 820
+[INFO] 2025-12-08 20:34:50,419 views Searching within 500.0m of (53.343180693257764, -6.271691322326661), cuisine=italian
+[INFO] 2025-12-08 20:34:50,448 views Found 0 spots within radius
+[INFO] 2025-12-08 20:34:50,449 basehttp "POST /api/foodspots/within_radius/ HTTP/1.0" 200 2
+[INFO] 2025-12-08 20:34:52,351 views Returning 15 food spots
+[INFO] 2025-12-08 20:34:52,353 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:35:24,328 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:35:24,377 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[INFO] 2025-12-08 20:35:24,401 views Returning 15 food spots
+[INFO] 2025-12-08 20:35:24,403 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:35:25,633 basehttp "GET /api/foodspots/statistics/ HTTP/1.0" 200 338
+[INFO] 2025-12-08 20:35:33,752 basehttp "GET /api/foodspots/22/reviews/ HTTP/1.0" 200 2
+[INFO] 2025-12-08 20:35:40,825 views Returning 15 food spots
+[INFO] 2025-12-08 20:35:40,827 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:49:48,277 basehttp "GET / HTTP/1.0" 200 18325
+[INFO] 2025-12-08 20:49:48,941 basehttp "GET /api/foodspots/categories/ HTTP/1.0" 200 592
+[INFO] 2025-12-08 20:49:48,963 views Returning 15 food spots
+[INFO] 2025-12-08 20:49:48,965 basehttp "GET /api/foodspots/ HTTP/1.0" 200 5496
+[INFO] 2025-12-08 20:49:54,734 basehttp "GET /admin HTTP/1.0" 301 0
+[INFO] 2025-12-08 20:49:54,742 basehttp "GET /admin/ HTTP/1.0" 302 0
+[INFO] 2025-12-08 20:49:54,750 basehttp "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4181
+[WARNING] 2025-12-08 20:49:55,009 log Not Found: /favicon.ico
+[WARNING] 2025-12-08 20:49:55,010 basehttp "GET /favicon.ico HTTP/1.0" 404 2578

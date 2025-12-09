@@ -1,0 +1,104 @@
+services:
+  # PostgreSQL with PostGIS
+  postgis:
+    image: postgis/postgis:15-3.3
+    container_name: foodspots_postgis
+    environment:
+      POSTGRES_DB: foodspots_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - foodspots_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # PgAdmin4
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: foodspots_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@foodspots.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - foodspots_network
+    depends_on:
+      - postgis
+    restart: unless-stopped
+
+# Django Application
+  django:
+    build:
+      context: ../backend
+      dockerfile: ../docker/Dockerfile.django
+    container_name: foodspots_django
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py load_initial_data &&
+             python manage.py collectstatic --noinput &&
+             python manage.py runserver 0.0.0.0:8000"
+    environment:
+      DB_NAME: foodspots_db
+      DB_USER: postgres
+      DB_PASSWORD: postgres123
+      DB_HOST: postgis
+      DB_PORT: 5432
+      SECRET_KEY: production-secret-key-change-this-in-real-deployment-xyz789
+      DEBUG: 'True'
+      ALLOWED_HOSTS: localhost,127.0.0.1,django,nginx,*
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backend:/app
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+    networks:
+      - foodspots_network
+    depends_on:
+      postgis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    container_name: foodspots_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+      - ../backend/templates:/app/templates
+    networks:
+      - foodspots_network
+    depends_on:
+      - django
+    restart: unless-stopped
+
+networks:
+  foodspots_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+  static_volume:
+  media_volume:
