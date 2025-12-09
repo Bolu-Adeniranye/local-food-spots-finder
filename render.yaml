@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: foodspots-django
+    env: python
+    region: oregon
+    plan: starter
+    rootDir: backend
+    buildCommand: |
+      pip install -r requirements.txt &&
+      python manage.py migrate &&
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn foodspots.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: foodspots-django.onrender.com,*.onrender.com
+      - key: DB_NAME
+        fromDatabase:
+          name: foodspots-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: foodspots-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: foodspots-db
+          property: password
+      - key: DB_HOST
+        fromDatabase:
+          name: foodspots-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: foodspots-db
+          property: port
+
+databases:
+  - name: foodspots-db
+    databaseName: foodspots_db
+    user: foodspots_user
+    plan: starter
+    postgresMajorVersion: 15
+
